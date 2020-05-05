@@ -102,26 +102,6 @@
         "summary": "Get the actual weather in Chantilly.",
         "description": "You want to know the weather outside?",
         "operationId": "weatherImagine"
-      },
-      "delete": {
-        "summary": "",
-        "operationId": "delete-axway-imagine",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        },
-        "description": "This is to delete this locations weather"
-      },
-      "head": {
-        "summary": "",
-        "operationId": "head-axway-imagine",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        },
-        "description": "Test HEAD"
       }
     },
     "/{ip}": {
