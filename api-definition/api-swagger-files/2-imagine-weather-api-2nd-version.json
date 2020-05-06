@@ -94,6 +94,9 @@
                       "type": "integer"
                     }
                   }
+                },
+                "customer": {
+                  "$ref": "https://axway.stoplight-dev.com/api/nodes.raw/?srn=gh/axway-apim/api-lifecycle-demo/reference/customerapi.json/definitions/customer&mid=6&deref=bundle"
                 }
               }
             }
@@ -102,6 +105,16 @@
         "summary": "Get the actual weather in Chantilly.",
         "description": "You want to know the weather outside?",
         "operationId": "weatherImagine"
+      },
+      "delete": {
+        "summary": "",
+        "operationId": "delete-axway-imagine",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "description": "Deletes the city"
       }
     },
     "/{ip}": {
