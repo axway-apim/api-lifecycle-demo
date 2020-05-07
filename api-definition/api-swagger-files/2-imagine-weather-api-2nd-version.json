@@ -115,6 +115,16 @@
           }
         },
         "description": "Deletes the city"
+      },
+      "head": {
+        "summary": "",
+        "operationId": "head-axway-imagine",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "description": "test\n"
       }
     },
     "/{ip}": {
