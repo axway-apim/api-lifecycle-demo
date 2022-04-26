@@ -12,8 +12,7 @@
       "Imagine":[
          "Axway",
          "Chantilly"
-      ],
-	 "securityLevel" : [ "Public" ] 
+      ]
    },
 	"authenticationProfiles": [
 		{
@@ -49,5 +48,8 @@
    ],
    "applications":[
       { "name":"Test" }
-   ]
+   ],
+   "customProperties":{
+	 "securityLevel" : "Public"
+   }
 }
