@@ -50,6 +50,7 @@
       { "name":"Test" }
    ],
    "customProperties":{
-	 "securityLevel" : "public"
+	 "securityLevel" : "public",
+	 "publicAPI": true
    }
 }
