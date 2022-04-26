@@ -12,7 +12,8 @@
       "Imagine":[
          "Axway",
          "Chantilly"
-      ]
+      ],
+	 "securityLevel" : [ "Public" ] 
    },
 	"authenticationProfiles": [
 		{
