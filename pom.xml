@@ -14,47 +14,18 @@
         <stage>api-env</stage>
     </properties>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>localNexus</id>
-            <url>http://api-env:8081/nexus/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>localNexus</id>
-            <url>http://api-env:8081/nexus/content/repositories/releases</url>
-        </repository>
-    </distributionManagement>
-
+   
     <dependencies>
-        <dependency>
-            <groupId>com.github.axway-api-management-plus.swagger-promote</groupId>
-            <artifactId>axway-swagger-promote-core</artifactId>
-            <version>1.6.7-1</version>
+         <dependency>
+            <groupId>com.github.axway-api-management-plus.apim-cli</groupId>
+            <artifactId>apimcli-apis</artifactId>
+            <version>1.11.0</version>
         </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.2.0</version>
-                <executions>
-                    <execution>
-                        <id>distribution</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                        <configuration>
-                            <finalName>a2a-api-${project.version}</finalName>
-                            <appendAssemblyId>false</appendAssemblyId>
-                            <descriptors>
-                                <descriptor>assembly/assembly.xml</descriptor>
-                            </descriptors>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+         
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -69,7 +40,7 @@
                 </executions>
                 <configuration>
                     <addResourcesToClasspath>true</addResourcesToClasspath>
-                    <mainClass>com.axway.apim.App</mainClass>
+                    <mainClass>com.axway.apim.APIImportApp</mainClass>
                     <classpath/>
                     <!--commandlineArgs>
                         -c ${apiConfigFile} -s ${stage} -f true
