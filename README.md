@@ -1,4 +1,4 @@
-# API-Management Lifecycle & DevOps Demo
+# API-Management Lifecycle & DevOps Demo1
 This Demo-Material is used to cover the API-Lifecycle-Handling in combination with Stoplight for API-Design, API-Builder for Mock- and API-Implementation. This all is combined with Swagger-Promote to seamslessly deploy the API into the API-Manager.  
 The Story is to simulate a brand new - API-First-Driven - Weather-API, that passes the following stages:
 - Only having an API-Design, which is going through some iterations/evolutions  
